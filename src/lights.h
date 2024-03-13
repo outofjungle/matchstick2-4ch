@@ -19,7 +19,7 @@ class Lights : public Task
 {
   CRGB *leds;
   // TODO: Pass these into the constructor
-  unsigned int FPS = 100;
+  unsigned int FPS = 60;
   unsigned int hue = 200;
   unsigned int curpattern = 0;
   unsigned int brightness = _BRIGHTNESS;

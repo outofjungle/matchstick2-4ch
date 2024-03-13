@@ -1,13 +1,11 @@
-// Gradient palette "grayscale08_gp", originally from
-// http://soliton.vm.bytemark.co.uk/pub/cpt-city/ma/gray/tn/grayscale08.png.index.html
+// Gradient palette "red_gp", originally from
+// http://soliton.vm.bytemark.co.uk/pub/cpt-city/ds9/tn/red.png.index.html
 // converted for FastLED with gammas (2.6, 2.2, 2.5)
-// Size: 16 bytes of program space.
+// Size: 8 bytes of program space.
 
-DEFINE_GRADIENT_PALETTE(grayscale08_gp){
-    0, 3, 7, 4,
-    89, 100, 3, 1,
-    173, 255, 136, 125,
-    255, 213, 219, 214};
+DEFINE_GRADIENT_PALETTE(red_gp){
+    0, 0, 0, 0,
+    255, 255, 0, 0};
 
 // Gradient palette "es_emerald_dragon_10_gp", originally from
 // http://soliton.vm.bytemark.co.uk/pub/cpt-city/es/emerald_dragon/tn/es_emerald_dragon_10.png.index.html
@@ -70,9 +68,25 @@ DEFINE_GRADIENT_PALETTE(b_gp){
     191, 255, 255, 0,
     255, 255, 255, 255};
 
+// Gradient palette "nunoftheabove_gp", originally from
+// http://soliton.vm.bytemark.co.uk/pub/cpt-city/pj/6/tn/nunoftheabove.png.index.html
+// converted for FastLED with gammas (2.6, 2.2, 2.5)
+// Size: 32 bytes of program space.
+
+DEFINE_GRADIENT_PALETTE(nunoftheabove_gp){
+    0, 1, 1, 1,
+    51, 1, 1, 1,
+    56, 255, 255, 255,
+    94, 255, 255, 255,
+    101, 1, 1, 1,
+    135, 1, 1, 1,
+    153, 18, 7, 230,
+    255, 224, 10, 9};
+
 const TProgmemRGBGradientPalettePtr palettes[] = {
-    grayscale08_gp,
+    red_gp,
     es_emerald_dragon_10_gp,
     GMT_ocean_gp,
     Spectral_08_gp,
-    b_gp};
+    b_gp,
+    nunoftheabove_gp};

@@ -23,7 +23,7 @@ void Lights::Setup()
   FastLED.addLeds<CHIPSET, LED_PIN1, COLOR_ORDER>(leds, NUM_LEDS);
   FastLED.setBrightness(brightness);
 
-  currentPalette = paletteList[4];
+  currentPalette = paletteList[5];
 }
 
 void Lights::Tick()
